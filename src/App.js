@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './style.css'
+import youssef from './8.jpg'
 
-function App() {
+/*function App() {
   return (
     <>
     <div className="App">
@@ -49,6 +51,111 @@ function App() {
    </>         
    
   );
+}*/
+
+/*function App(){
+  let input = (<input type='text' placeholder='Name'/>);
+  let button = <button>Submit</button>;
+  let form = (
+    <form>
+      {input}
+      {button}
+    </form>
+  );
+  
+  return form;
+  }
+
+  /*function App() {
+    // We can put functions inside other functions when they are related
+    function createForm() {
+      let input = <input type="text" placeholder="Name" />;
+      let button = <button>Submit</button>;
+      return (
+        <form>
+          {input}
+          {button}
+        </form>
+      );
+    }
+    return <div>{createForm()}</div>;
+   }*/
+
+ /*function djo(){
+  return (
+  
+    [1, 2, 3].map(currentValue => (
+           <div>{currentValue}</div>
+    ))
+  
+    );
+ }
+
+  function App() {
+    let firstName = "Will";
+    let lastName = "Smith";
+    
+  return (
+   <div>
+     
+     {djo()}
+      <img src={youssef} className="my-profile" alt='Will Smith'/>
+      <p>
+       {firstName} {lastName}
+     </p>
+   </div>
+ );
+}*/
+
+
+
+function App() {
+ 
+  
+return (
+<>
+
+
+<div style={{border:'solid 1px black',maxwidth:'100vw'}}/>
+<div style={{textAlign:'center'}}/>
+ <h1 className="title red" style={{textAlign:'center', color:'red'}}>Youssef Ayari</h1>
+
+
+ <img src="/4.jpg" style={{height:'100px'}} className="photo"/>
+
+
+ <img src={youssef} className="photo"/>
+
+
+<video width="320" height="240" controls>
+
+ <source src="myVideo.mp4" type="video/mp4" />
+
+</video>
+
+
+
+</>
+);
 }
 
+
+
+
+/*const firstName = prompt("type your first name");
+
+ function App() {
+   return (
+     <div>
+       <p> Hello {firstName || "Anonymous"} </p>
+       <p> It looks like you {firstName ? "have" : "don’t have"} a name</p>
+       {!firstName && (
+         <form>
+           <p> Type your name here </p>
+           <input type="text" />
+         </form>
+       )}
+     </div>
+   );
+ }*/
 export default App;
