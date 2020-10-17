@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import './style.css'
 import youssef from './8.jpg'
+import Profilephoto from '../src/Component/Profile/ProfilePhoto'
+import FullName from '../src/Component/Profile/FullName'
+import Address from '../src/Component/Profile/Address'
 
 /*function App() {
   return (
@@ -58,13 +61,15 @@ import youssef from './8.jpg'
   let button = <button>Submit</button>;
   let form = (
     <form>
+      <Profilephoto/>
       {input}
       {button}
     </form>
   );
   
   return form;
-  }
+  }*/
+
 
   /*function App() {
     // We can put functions inside other functions when they are related
@@ -109,7 +114,7 @@ import youssef from './8.jpg'
 
 
 
-function App() {
+/*function App() {
  
   
 return (
@@ -158,4 +163,19 @@ return (
      </div>
    );
  }*/
+
+
+
+ function App(){
+
+  return (
+    <div>
+     <Profilephoto/>
+     <FullName/>
+     <Address/>
+    </div>
+  );
+
+ }
+
 export default App;
