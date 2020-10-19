@@ -6,6 +6,9 @@ import youssef from './8.jpg'
 import Profilephoto from '../src/Component/Profile/ProfilePhoto'
 import FullName from '../src/Component/Profile/FullName'
 import Address from '../src/Component/Profile/Address'
+import Test from '../src/Component/Profile/Test'
+import { propTypes } from 'react-bootstrap/esm/Image';
+import Data from '../src/Profile/ProfileComponent/ProfileComponent'
 
 /*function App() {
   return (
@@ -166,13 +169,32 @@ return (
 
 
 
- function App(){
+ /*function App(){
 
   return (
     <div>
      <Profilephoto/>
-     <FullName/>
+     <FullName   name="Youssef ya halouf"   age="26"/>
+     
      <Address/>
+     <Test/>
+      <Data> <img src={youssef} className="photo"/></Data>
+    </div>
+  );
+
+ }*/
+
+
+
+ function App(){
+
+  return (
+    <div>
+  
+      <Data fullname="bilel dhawedi " profession="Ingenieur " bio=" 2073 "> <img src={youssef} className="photo"/>
+     
+      </Data>
+      
     </div>
   );
 
