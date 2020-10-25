@@ -1,6 +1,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import  { useEffect, useState } from "react";
 
 const GetData =(props) => {
 
@@ -11,11 +12,23 @@ const Styles={ color:"red"};
 
       alert(props.fullname)
       };
-     
+
+    
+
+      const [name, setName] = useState("Youssef Ayari");  // hooks pour gere un etat
+  
+      console.log(name)
+      console.log(setName)
+
       
     return  (
         <>
 <div>
+    <span>{name}</span>
+    
+    <br></br>
+
+    
     <span>{props.fullname}</span>
     <span>{props.bio}</span>
     <span>{props.profession}</span>
