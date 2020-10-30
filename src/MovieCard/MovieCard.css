@@ -1,0 +1,28 @@
+.card {
+    border: 2px soild gold;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+
+  }
+  .card img {
+    height: 250px;
+  }
+
+  .photo{
+
+    height: 400px;
+  }
+
+  .card-body{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: #141414;
+    z-index: 0;
+
+  }

@@ -10,6 +10,36 @@ import Test from '../src/Component/Profile/Test'
 import { propTypes } from 'react-bootstrap/esm/Image';
 import Data from '../src/Profile/ProfileComponent/ProfileComponent'
 
+import Movies from '../src/AddMovie/AddMovie'
+import FilterMovie from '../src/FilterMovie/FilterMovie'
+
+
+function App() {
+
+
+  return (
+    <div className="App">
+ <FilterMovie />
+
+  <Movies />
+
+    </div>
+
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
 
 /*function App() {
   return (
@@ -206,7 +236,7 @@ return (
 
 
 
-class App extends Component {
+/*class App extends Component {
 
   constructor(props) {
     super(props)
@@ -317,10 +347,31 @@ class App extends Component {
     );
 
   }
-}
+}*/
 
 
 
 
 
-export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

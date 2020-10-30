@@ -1,5 +1,23 @@
+ .movies{
+     color:chocolate;
+  
+
+}
+
+
 .App {
+  
   text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  z-index: 0;
+  line-height: 1.3;
+  margin: 0;
+
+  
 }
 
 .App-logo {
