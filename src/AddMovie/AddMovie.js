@@ -5,7 +5,9 @@ import MovieCard from "../MovieCard/MovieCard";
 import MovieList from "../MovieList/MovieLists";
 
 
-export default function Movies() {
+
+
+export default function Movies({match}) {
 
   const [MovieLists, setProfiles] = useState(MovieList);
   const [Movie, setProfile] = useState({title:"", description:"", posterUrl:"", rate:"",photo:""});
@@ -31,13 +33,19 @@ export default function Movies() {
  
     setProfile({title:"", description:"", posterUrl:"", rate:"",photo:""});
 
+  };
 
   
 
-  };
-
+  
+ 
 
   return (
+
+    <>
+   
+
+
 
     <div className="container">
 
@@ -116,5 +124,12 @@ export default function Movies() {
   </div>
 
     </div>
+    </>
   );
+
 }
+
+
+
+
+

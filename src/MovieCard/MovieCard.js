@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from "react";
 import PropTypes from "prop-types";
 
-const MovieCard =({profile})=>{
+const MovieCard =({profile,match,data})=>{
 
     const {title, description, posterUrl, rate,photo}=profile;
 
-
+  
     return (
  <>
 

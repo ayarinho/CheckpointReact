@@ -4,8 +4,11 @@ import React, {  Component, useState } from "react";
 import MovieList from "../MovieList/MovieLists";
 import MovieCard from "../MovieCard/MovieCard"
 
-export default function FilterMovie() {
+
+const FilterMovie =({match})=> {
     
+  console.log(match);
+
 
     const [Movie,setProfile] = useState({  title:"", description:"", posterUrl:"", rate:"",photo:""})
     const [isShow, setIsShow] = useState(false);
@@ -17,7 +20,7 @@ export default function FilterMovie() {
     
         console.log(e.target.value)
     
-      
+       
       
         console.log(Movie)
 
@@ -28,28 +31,18 @@ export default function FilterMovie() {
       const handleChange1 = ( ) => {
 
         setIsShow(!isShow);
+    
        
-        /*MovieList.map((e,i) => {
-          
-          if(e.title===Movie.title){
-        
-          console.log(e.title)
-          console.log(Movie.title);
-         
-          return (<MovieCard  key={i} profile={e}/>); 
-         
-          }
-        
-        
-        }
-        )*/
-      };
+      }
 
+      
     
   return (
+
+ 
     <>
   
-
+ 
       <div className="profiles-button-container">
 
       <form className="form-group">
@@ -96,3 +89,4 @@ MovieList.map((e,i) => {
   );
 
 }
+export default FilterMovie;

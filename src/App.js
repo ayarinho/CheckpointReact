@@ -1,20 +1,88 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './style.css'
-import youssef from './8.jpg'
-import Profilephoto from '../src/Component/Profile/ProfilePhoto'
-import FullName from '../src/Component/Profile/FullName'
-import Address from '../src/Component/Profile/Address'
-import Test from '../src/Component/Profile/Test'
-import { propTypes } from 'react-bootstrap/esm/Image';
-import Data from '../src/Profile/ProfileComponent/ProfileComponent'
+import Products from '../src/Product/Product'
+import Movie from '../src/MovieCard/Movie'
 
-import Movies from '../src/AddMovie/AddMovie'
-import FilterMovie from '../src/FilterMovie/FilterMovie'
+import { Link, Route, Switch,Redirect } from "react-router-dom";
 
 
-function App() {
+
+
+const App = () => {
+
+
+  const goHome=()=>{
+
+    return (<Redirect to={{pathname: '/', state: '/Movie'}} />)
+  }
+
+  return (
+<>
+
+
+
+<nav className="navbar navbar-expand-md navbar-dark bg-dark">
+       <a href="#" class="navbar-brand">Movies</a>
+       <button className="navbar-toggler" data-toggle="collapse" data-target="#menuhamburger">
+           <span className="navbar-toggler-icon"></span>
+          </button>
+       <div className="collapse navbar-collapse" id="menuhamburger">
+         <ul className="navbar-nav m-auto">
+           <li className="nav-item active">
+               <Link to="/" className="nav-link">Homes</Link>
+           </li>
+           <li className="nav-item">
+           <Link to="/Movie"  className="nav-link">Movie</Link>
+           </li>
+           <li className="nav-item">
+
+           <Link to="/products" className="nav-link">Products</Link>
+           </li>
+
+           <li className="nav-item">
+
+         <Link to="/" onClick={()=>goHome()} className="nav-link">Return</Link>
+        </li>
+          
+         </ul>
+       </div>
+   </nav>
+
+
+
+
+      <Switch>
+     
+      <Route exact path="/"  />
+      <Route path="/products" component={Products} />
+     <Route path="/Movie" component={Movie} />
+      </Switch>
+
+    </> 
+  );
+
+};
+export default App
+
+
+
+
+
+
+
+
+
+
+///////////////////////
+
+
+
+
+
+
+
+/*function App() {
 
 
   return (
@@ -23,18 +91,20 @@ function App() {
 
   <Movies />
 
+  <Category/>
+
     </div>
 
   );
 }
 
-export default App;
+export default App;*/
 
 
 
 
 
-
+///////////////////////////
 
 
 
@@ -90,6 +160,12 @@ export default App;
   );
 }*/
 
+
+
+
+
+/////////////////////
+
 /*function App(){
   let input = (<input type='text' placeholder='Name'/>);
   let button = <button>Submit</button>;
@@ -103,6 +179,16 @@ export default App;
   
   return form;
   }*/
+
+
+
+
+
+
+
+  ///////////////////////////
+
+
 
 
 /*function App() {
@@ -130,6 +216,17 @@ export default App;
    );
 }
 
+
+
+
+/////////////////////
+
+
+
+
+
+
+
  function App() {
    let firstName = "Will";
    let lastName = "Smith";
@@ -145,6 +242,13 @@ export default App;
   </div>
 );
 }*/
+
+
+
+
+
+
+//////////////////////////////
 
 
 
@@ -181,6 +285,12 @@ return (
 
 
 
+
+//////////////////////////////
+
+
+
+
 /*const firstName = prompt("type your first name");
 
  function App() {
@@ -197,6 +307,15 @@ return (
      </div>
    );
  }*/
+
+
+
+
+
+/////////////////////////////////////////////
+
+
+
 
 
 
@@ -217,6 +336,24 @@ return (
 
 
 
+
+
+
+
+
+////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 /*function App(){
 
  return (
@@ -230,6 +367,13 @@ return (
  );
 
 }*/
+
+
+
+
+
+//////////////////////////
+
 
 
 
@@ -254,6 +398,7 @@ return (
 
     }
   }
+
 
 
   componentDidMount() {
@@ -350,6 +495,8 @@ return (
 }*/
 
 
+
+/////////////////////
 
 
 
