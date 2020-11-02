@@ -15,18 +15,22 @@ const MoviesTrailer = ({match,data}) => {
   
     if(movie1){
     console.log(movie1)
-    MovieData1 = <div>
-       <h2>{movie1.posterUrl}</h2>
- 
-          </div>;
+    MovieData1 = <div >
+
+       <h2 >{movie1.posterUrl}</h2>
+
+       <div>{movie1.Trailer}</div>
+
+       </div>
   
     }
     else
-    MovieData1 = "";
+    MovieData1 = "Please select a Bonde Annonce";
   
     return (
-      <div>
-        <div>
+      <div >
+        <div >
+     
            {MovieData1}
         </div>
       </div>

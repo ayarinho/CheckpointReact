@@ -3,6 +3,8 @@ import './App.css';
 import './style.css'
 import Products from '../src/Product/Product'
 import Movie from '../src/MovieCard/Movie'
+import film from "./film.jpg";
+import film1 from "./8.jpg";
 
 import { Link, Route, Switch,Redirect } from "react-router-dom";
 
@@ -17,8 +19,13 @@ const App = () => {
     return (<Redirect to={{pathname: '/', state: '/Movie'}} />)
   }
 
+
+
   return (
 <>
+
+
+
 
 
 
@@ -54,7 +61,7 @@ const App = () => {
 
       <Switch>
      
-      <Route exact path="/"  />
+      <Route exact path="/" />
       <Route path="/products" component={Products} />
      <Route path="/Movie" component={Movie} />
       </Switch>

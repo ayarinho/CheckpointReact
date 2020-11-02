@@ -8,7 +8,7 @@ import MoviesTrailer from "./MoviesTrailer";
 
 export default function Movie({match}) {
 
- 
+  
   var descriptionList = MovieList.map((movie) =>
         (
             <li>
@@ -35,6 +35,7 @@ export default function Movie({match}) {
   return (
 
     <>
+
      <div>
     
           
@@ -47,12 +48,10 @@ export default function Movie({match}) {
     {descriptionList} 
 
 
-  
-    
-    
     </nav>
       
       </form>
+
    
                 <div className="form-row"  style={{ border: "1px solid black", padding: "20px" }}>
 
@@ -69,13 +68,16 @@ export default function Movie({match}) {
 
 
         </div>
+
+
+
     
-        <div>
+ <div>
     
-  
+
  <form class="form-inline">
       
-      <h3> Trailer</h3>
+      <h3> Bonde Annonce</h3>
     
     <nav className="navbar navbar-light"  style={{ color: 'red'}}> {TrailerList} </nav>
       
@@ -96,11 +98,10 @@ export default function Movie({match}) {
              )}
          />
 </div>
+
      </div>
 
 
-
- 
 
      </>
   );

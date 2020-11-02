@@ -25,11 +25,13 @@ const MoviesDescription = ({match,data}) => {
     if(movie){
 
     console.log(movie)
-    MovieData = <div>
+    MovieData = <div style={{color:'green'}}>
   
         <h3>{movie.description}</h3>
-        <img src={movie.photo} className="photo"/>
 
+        <img src={movie.photo} className="photo" style={{height:300}}/>
+    
+  
         <div> 
           
           <br></br>
@@ -48,12 +50,13 @@ const MoviesDescription = ({match,data}) => {
   
     }
     else
-    MovieData ="";
+
+    MovieData ="Please select a description";
 
     
   
     return (
-      <div>
+      <div >
         <div>
            {MovieData}
         </div>
